@@ -1,0 +1,100 @@
+import { MachinesToolbar } from "@/sections/MachinesPage/components/MachinesToolbar";
+import { MachinesTable } from "@/sections/MachinesPage/components/MachinesTable";
+import { AddDevicesPanel } from "@/sections/MachinesPage/components/AddDevicesPanel";
+
+export const MachinesSection = () => {
+  return (
+    <section className="box-border caret-transparent outline-[3px] no-underline mb-24">
+      <MachinesToolbar
+        variant="header"
+        title="Machines"
+        description="Manage the devices connected to your tailnet."
+        documentationhref="#"
+        documentationAriaLabel="Read documentation about Machines"
+        documentationText="Learn more"
+        addDeviceText="Add device"
+        addDeviceIconSrc="https://c.animaapp.com/ms7jp9pzk0KYBc/assets/icon-12.svg"
+        addDeviceIconAlt="Icon"
+        searchIconSrc=""
+        searchIconAlt=""
+        searchName=""
+        searchPlaceholder=""
+        searchValue=""
+        filtersIconSrc=""
+        filtersIconAlt=""
+        filtersText=""
+        filtersChevronIconSrc=""
+        filtersChevronIconAlt=""
+        filtersDocumentationhref="#"
+        filtersDocumentationAriaLabel=""
+        filtersDocumentationText=""
+        exportAriaLabel=""
+        exportTitle=""
+        exportIconSrc=""
+        exportIconAlt=""
+        machineCountText=""
+      />
+      <MachinesToolbar
+        variant="filters"
+        title=""
+        description=""
+        documentationhref="#"
+        documentationAriaLabel=""
+        documentationText=""
+        addDeviceText=""
+        addDeviceIconSrc=""
+        addDeviceIconAlt=""
+        searchIconSrc="https://c.animaapp.com/ms7jp9pzk0KYBc/assets/icon-13.svg"
+        searchIconAlt="Icon"
+        searchName="query"
+        searchPlaceholder="Search by name, owner, tag, version..."
+        searchValue=""
+        filtersIconSrc="https://c.animaapp.com/ms7jp9pzk0KYBc/assets/icon-14.svg"
+        filtersIconAlt="Icon"
+        filtersText="Filters"
+        filtersChevronIconSrc="https://c.animaapp.com/ms7jp9pzk0KYBc/assets/icon-15.svg"
+        filtersChevronIconAlt="Icon"
+        filtersDocumentationhref="#"
+        filtersDocumentationAriaLabel="Read documentation about Machines filters"
+        filtersDocumentationText="Learn more"
+        exportAriaLabel="Export devices data"
+        exportTitle="Export devices data"
+        exportIconSrc="https://c.animaapp.com/ms7jp9pzk0KYBc/assets/icon-16.svg"
+        exportIconAlt="Icon"
+        machineCountText=""
+      />
+      <MachinesToolbar
+        variant=""
+        title=""
+        description=""
+        documentationhref="#"
+        documentationAriaLabel=""
+        documentationText=""
+        addDeviceText=""
+        addDeviceIconSrc=""
+        addDeviceIconAlt=""
+        searchIconSrc=""
+        searchIconAlt=""
+        searchName=""
+        searchPlaceholder=""
+        searchValue=""
+        filtersIconSrc=""
+        filtersIconAlt=""
+        filtersText=""
+        filtersChevronIconSrc=""
+        filtersChevronIconAlt=""
+        filtersDocumentationhref="#"
+        filtersDocumentationAriaLabel=""
+        filtersDocumentationText=""
+        exportAriaLabel=""
+        exportTitle=""
+        exportIconSrc=""
+        exportIconAlt=""
+        machineCountText="2 machines"
+      />
+      <MachinesTable />
+      <div className="box-border caret-transparent flex justify-between outline-[3px] no-underline mt-4"></div>
+      <AddDevicesPanel />
+    </section>
+  );
+};
